@@ -125,10 +125,11 @@
                 <ul class="pin-list">
                     <li><strong>Front Left:</strong> PB6</li>
                     <li><strong>Front Right:</strong> PB7</li>
-                    <li><strong>Back Left:</strong> PB8</li>
-                    <li><strong>Back Right:</strong> PB9</li>
+                    <li><strong>Back Left:</strong> PA2</li>
+                    <li><strong>Back Right:</strong> PA3</li>
                 </ul>
                 <p><em>Connect signal wire from each ESC to corresponding pin</em></p>
+                <p><strong>📡 I2C Available:</strong> PB8 (SCL) & PB9 (SDA) now free for sensors!</p>
             </div>
         </div>
 
@@ -147,12 +148,12 @@
                 </div>
                 <div class="motor-box motor-cw">
                     <strong>Back Left</strong><br>
-                    PB8<br>
+                    PA2<br>
                     <span style="color: #ff6b6b">↻ CW</span>
                 </div>
                 <div class="motor-box motor-ccw">
                     <strong>Back Right</strong><br>
-                    PB9<br>
+                    PA3<br>
                     <span style="color: #4ecdc4">↺ CCW</span>
                 </div>
             </div>
@@ -176,6 +177,7 @@
                     <li><strong>Channel 2:</strong> Pitch (Elevator)</li>
                     <li><strong>Channel 3:</strong> Throttle</li>
                     <li><strong>Channel 4:</strong> Yaw (Rudder)</li>
+                    <li><strong>Channel 5:</strong> ARM Switch ⭐</li>
                 </ul>
             </div>
         </div>
@@ -198,9 +200,10 @@
             <div class="step">
                 <strong>Step 4:</strong> Test arming sequence:
                 <ul>
-                    <li>Throttle to minimum</li>
-                    <li>Yaw stick to right → Motors ARM</li>
-                    <li>Yaw stick to left → Motors DISARM</li>
+                    <li>Set throttle to minimum position</li>
+                    <li>Flip ARM switch (Ch5) HIGH → Motors ARM ✅</li>
+                    <li>Flip ARM switch (Ch5) LOW → Motors DISARM ❌</li>
+                    <li>ARM switch stays in position (no need to hold)</li>
                 </ul>
             </div>
             
